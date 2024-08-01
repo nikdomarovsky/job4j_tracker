@@ -12,6 +12,7 @@ public class Tracker {
         items[size++] = item;
         return item;
     }
+
     public Item[] findAll() {
         return Arrays.copyOf(items, size);
     }
@@ -27,6 +28,7 @@ public class Tracker {
         }
         return rsl;
     }
+
     public Item[] findByName(String key) {
         int count = 0;
         for (int i = 0; i < size; i++) {
