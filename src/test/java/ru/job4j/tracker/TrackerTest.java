@@ -1,6 +1,7 @@
 package ru.job4j.tracker;
 
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class TrackerTest {
@@ -13,6 +14,7 @@ public class TrackerTest {
         Item result = tracker.findById(item.getId());
         assertThat(result.getName()).isEqualTo(item.getName());
     }
+
     @Test
     public void whenTestFindById() {
         Tracker tracker = new Tracker();
@@ -60,6 +62,7 @@ public class TrackerTest {
         Item[] result = tracker.findByName(second.getName());
         assertThat(result[1].getName()).isEqualTo(second.getName());
     }
+
     @Test
     public void whenReplaceItemIsSuccessful() {
         Tracker tracker = new Tracker();
@@ -81,6 +84,7 @@ public class TrackerTest {
         assertThat(tracker.findById(item.getId()).getName()).isEqualTo("Bug");
         assertThat(result).isFalse();
     }
+
     @Test
     public void whenDeleteItemIsSuccessful() {
         Tracker tracker = new Tracker();
