@@ -29,14 +29,14 @@ public class Tracker {
                 count++;
             }
         }
-        Item[] rsl = new Item[count];
+        Item[] result = new Item[count];
         int index = 0;
         for (int i = 0; i < size; i++) {
             if (items[i].getName().equals(key)) {
-                rsl[index++] = items[i];
+                result[index++] = items[i];
             }
         }
-        return rsl;
+        return result;
     }
 
     private int indexOf(int id) {
