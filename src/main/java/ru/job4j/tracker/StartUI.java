@@ -28,16 +28,19 @@ public class StartUI {
                 String name = input.nextLine();
                 System.out.println("Введите новое имя заявки");
                 String name2 = input.nextLine();
-                System.out.println("Вы изменили заявку с"+ name + " на "+ name2);
-            }if (select == 3) {
+                System.out.println("Вы изменили заявку с" + name + " на " + name2);
+            }
+            if (select == 3) {
                 System.out.println("Напишите заявку,которую хотите удалить");
                 String name = input.nextLine();
                 System.out.println("Вы успешно удалили заявку с именем " + name);
-            }if (select == 4) {
+            }
+            if (select == 4) {
                 System.out.println("Введите id заявки");
                 String name = input.nextLine();
                 System.out.println(name);
-            }if (select == 5) {
+            }
+            if (select == 5) {
                 System.out.println("Введите имя заявки");
                 String name = input.nextLine();
                 System.out.println(name);
