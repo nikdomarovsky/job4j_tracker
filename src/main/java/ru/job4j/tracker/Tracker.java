@@ -27,10 +27,10 @@ public class Tracker {
         int index = 0;
         for (int i = 0; i < size; i++) {
             if (items[i].getName().equals(key)) {
-                result[index++] = items[index];
+                result[index++] = items[i];
             }
         }
-        return result;
+        return Arrays.copyOf(result,index);
     }
 
     private int indexOf(int id) {
