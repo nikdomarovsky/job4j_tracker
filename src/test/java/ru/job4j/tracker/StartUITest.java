@@ -132,7 +132,7 @@ class StartUITest {
         Tracker tracker = new Tracker();
         Item one = tracker.add(new Item("test1"));
         Input input = new MockInput(
-                new String[]{"0","1", "1"}
+                new String[]{"0", "1", "1"}
         );
         UserAction[] actions = new UserAction[]{
                 new FindByIdAction(output),
@@ -159,7 +159,7 @@ class StartUITest {
         Tracker tracker = new Tracker();
         Item one = tracker.add(new Item("test1"));
         Input input = new MockInput(
-                new String[]{"0","test1","1"}
+                new String[]{"0", "test1", "1"}
         );
         UserAction[] actions = new UserAction[]{
                 new FindByNameAction(output),
