@@ -21,15 +21,14 @@ public class ValidateInput implements Input {
     public int askInt(String question) {
         boolean invalid = true;
         int value = -1;
-        while (invalid) {
+        do {
             try {
                 value = input.askInt(question);
                 invalid = false;
             } catch (NumberFormatException nfe) {
-                output.println("Пожалуйста, введите корректные данные");
+                output.println("Пожалуйста, введите корректные данные.");
             }
-        }
+        } while (invalid);
         return value;
     }
-
 }
